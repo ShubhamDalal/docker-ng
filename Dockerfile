@@ -19,6 +19,3 @@ RUN rm -rf ./*
 COPY --from=builder /app/dist/docker-ng .
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
-
-# Run cmd 
-# docker build -t docker-ng .
